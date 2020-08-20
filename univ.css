@@ -1,0 +1,97 @@
+div#nav {
+    position: fixed;
+    height: 75px;
+    background-color: #ffffffde;
+    width: 100%;
+    z-index: 1;
+    top: -1px;
+    transition: color, 1s;
+}
+div#nav:hover {
+    background-color: rgb(238, 238, 238);
+    border-bottom: 10px ridge rgb(167, 167, 167);
+}
+div#nav:hover a#gallery {
+    opacity: 1;
+}
+a#gallery {
+    position: absolute;
+    opacity: 0;
+    font-family: 'Lobster', cursive;
+    transition: color, 0.3s;
+    font-size: 20px;
+    right: 300px;
+    top: 30px;
+    text-decoration: none;
+    color: black;
+    width: auto;
+    padding: 6px 6px;
+}
+a#gallery:hover {
+    color: white;
+    text-shadow: 2px 2px 0px #000000,  
+    4px 4px 0px #b61e1e,
+    5px 5px 0px #3b0d0d;
+    box-shadow: inset 0 0 0 25px rgb(0, 0, 0);
+    letter-spacing: 3px;
+    transform: rotate(-5deg);
+}
+a#gallery:active {
+    box-shadow: inset 0 0 0 25px darkred;
+    text-shadow: 2px 2px 0px #000000,  
+    4px 4px 0px #ad0101,
+    5px 5px 0px #790000;
+}
+h1#title {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: color, 0.5s;
+    font-family: 'Lobster', cursive;
+    color: rgb(0, 0, 0);
+    width: auto;
+    padding: 6px 6px;
+    user-select: none;
+    cursor: grab;
+}
+h1#title:hover {
+    color: darkred;
+}
+h1#title:active {
+    cursor: grabbing;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 25px rgb(0, 0, 0);
+    text-shadow: 2px 2px 0px #000000,  
+    4px 4px 0px #b61e1e,
+    5px 5px 0px #3b0d0d;
+}
+div#front {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+video#vapple {
+    height: calc(100% - 75px);
+    margin-top: 70px;
+    pointer-events: none;
+    opacity: 0.9;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+div#second {
+    height: 300px;
+    overflow-x: hidden;
+    background-color: white;
+}
+div#third {
+    height: 300px;
+    overflow-x: hidden;
+    background-color: darkred;
+}
+div#fourth {
+    height: 650px;
+    overflow-x: hidden;
+    background-color: white;
+}
